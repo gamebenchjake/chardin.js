@@ -1,8 +1,8 @@
 {
-    "name": "heelhook/chardin.js",
+    "name": "gamebenchjake/chardin.js",
     "version": "0.1.3",
-    "main": ["chardinjs.min.js", "chardinjs.js"],
-    "description": "Simple overlay instructions for your apps.",
+    "main": ["chardinjs.js"],
+    "description": "Simple overlay instructions for your apps. Tweaked for GBPro",
     "license": "Apache",
     "dependencies": {
         "jQuery": ">=1.6.0"

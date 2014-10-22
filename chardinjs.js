@@ -60,6 +60,7 @@
         });
         this.$el.find('.chardinjs-helper-layer').remove();
         this.$el.find('.chardinjs-show-element').removeClass('chardinjs-show-element');
+        document.find('.chardinFix').removeClass('chardinFix');
         this.$el.find('.chardinjs-relative-position').removeClass('chardinjs-relative-position');
         if (window.removeEventListener) {
           window.removeEventListener("keydown", this._onKeyDown, true);
@@ -171,6 +172,8 @@
         helper_layer.appendChild(tooltip_layer);
         this._place_tooltip(element);
         element.className += " chardinjs-show-element";
+        var drawer = document.getElementById("drawer");
+        drawer.className += " chardinFix";
         current_element_position = "";
         if (element.currentStyle) {
           current_element_position = element.currentStyle["position"];
